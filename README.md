@@ -4,6 +4,12 @@ This project was meant as a Front-end Code Test for The Hotel Network.
 Creator: Jonatan Rueda
 Date: 12/12/2020
 
+## Install
+
+In the project directory, you must run:
+
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
