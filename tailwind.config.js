@@ -5,11 +5,11 @@ module.exports = {
     extend: {
 			fontSize: {
 				'xxs': '.7rem',
-			}
+			},
+			fontFamily: {
+				'avenir': ['Avenir'],
+			 },
 		},
-    fontFamily: {
-      'avenir': ['Avenir'],
-		 },
   },
   variants: {
     extend: {},

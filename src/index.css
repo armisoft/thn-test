@@ -11,3 +11,48 @@
       src: local('Avenir'), url('fonts/AvenirLTProBook.woff') format('woff');
   }
 }
+
+.burger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: .375rem;
+	position: relative;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.burger__inner {
+	position: relative;
+	width: 1.5rem;
+	height: 1.25rem;
+}
+
+.burger__bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: .1875rem;
+	background-color: currentColor;
+	border-radius: .5rem;
+	transition: transform .3s ease;
+	transform-origin: center;
+}
+
+.burger__bar:nth-child(2) {
+	transform: translateY(.525rem);
+}
+
+.burger__bar:nth-child(3) {
+	transform: translateY(1.05rem);
+}
+
+.burger--open .burger__bar:first-child, .burger--open .burger__bar:nth-child(2) {
+	transform: translateY(.525rem) rotate(45deg);
+}
+
+.burger--open .burger__bar:nth-child(3) {
+	transform: translateY(.525rem) rotate(-45deg);
+}

@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Main from './pages/main';
 import './index.css';
-import Navbar from './components/navbar';
-import Search from './components/search';
-import MainAside from './pages/main-aside';
-import Footer from './components/footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
-		<Search />
-		<MainAside />
-		<Footer />
+		<BrowserRouter>
+			<Switch>
+				<Route exact path="/:promo_code" render={(props) => <Main {...props} />}/>
+				<Route exact path="/" render={(props) => <Main {...props} />}/>
+			</Switch>
+		</BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
