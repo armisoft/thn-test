@@ -2,7 +2,7 @@
 
 This project was meant as a Front-end Code Test for The Hotel Network.
 Creator: Jonatan Rueda
-Date: 10/12/2020
+Date: 12/12/2020
 
 ## Available Scripts
 
